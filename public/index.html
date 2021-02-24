@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styling Demo</title>
+  <link rel="stylesheet" href="build/tailwind.css">
+  <script type="text/javascript" src="./app.js"></script>
+</head>
+<body class="font-sans">
+  <div id="navMenu" class="flex navMenu h-full p-0 m-0 z-30 fixed top-0 bottom right-0 list-none overflow-x-hidden bg-blue-900 justify-center content-center place-items-center">
+    <ul class="text-gray-100 sm:text-xl md:text-2xl lg:text-5xl">
+      <li class="text-center py-4 hover:text-gray-300"><a href="#" class="navAnchor">ABOUT</a></li>
+      <li class="text-center py-4 hover:text-gray-300"><a href="#" class="navAnchor">SERVICES</a></li>
+      <li class="text-center py-4 hover:text-gray-300"><a href="#" class="navAnchor">CONTACT</a></li>
+    </ul>      
+  </div>
+  <div class="container mx-auto content h-full bg-gradient-to-t from-blue-700 via-blue-500 to-blue-700">
+    <!-- logo and nav button -->
+    <div class="flex flex-row flex-nowrap content-between py-4 px-4">
+      <div class="flex-none flex-shrink-0 z-20">
+        <img class="w-16 h-auto shadow-xl" src="assets/origma_logo.svg" alt="power button logo">
+      </div>
+      <div class="flex-grow flex-shrink z-20"></div>
+      <div class="flex-none flex-shrink-0 z-40">
+        <input name="navBtn" id="navBtn" class="invisible" type="checkbox" onclick="menuToggle()"/>
+        <label for="navBtn">
+          <div class="flex flex-col justify-center content-center place-items-center">
+            <div id="top" class="bar top bg-blue-900 w-20 h-2 m-2 rounded-sm hover:bg-green-700"></div>
+            <div id="middle" class="bar middle bg-blue-900 w-16 h-2 m-2 rounded-sm"></div>
+            <div id="bottom" class="bar bottom bg-blue-900 w-20 h-2 m-2 rounded-sm"></div>
+          </div>
+        </label>
+      </div>
+    </div>
+    <!-- hero section -->
+    <div class="flex flex-row flex-nowrap content-center py-4 px-4">
+      <h1 class="">Application Development</h1>
+    </div>
+  </div>
+</body>
+</html>

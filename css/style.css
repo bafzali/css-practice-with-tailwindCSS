@@ -1,0 +1,43 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+.bar {
+  transition: background-color .5s ease-in, transform .5s ease-in, width .5s ease-in;
+}
+
+.bar :hover {
+  background-color: ;
+}
+
+.navMenu {
+  width: 0px;
+  transition: width .75s cubic-bezier(.45,.05,.55,.95);
+}
+
+input[type="checkbox"]:checked ~ label .bar {
+  background-color: #fff;
+}
+
+input[type="checkbox"]:checked ~ label .top {
+  -webkit-transform: translateY(1.45rem) rotateZ(45deg);
+  -moz-transform: translateY(1.45rem) rotateZ(45deg);
+  -ms-transform: translateY(1.45rem) rotateZ(45deg);
+  -o-transform: translateY(1.45rem) rotateZ(45deg);
+  transform: translateY(1.45rem) rotateZ(45deg);
+}
+
+input[type="checkbox"]:checked ~ label .bottom {
+  -webkit-transform: translateY(-1.45rem) rotateZ(-45deg);
+  -moz-transform: translateY(-1.45rem) rotateZ(-45deg);
+  -ms-transform: translateY(-1.45rem) rotateZ(-45deg);
+  -o-transform: translateY(-1.45rem) rotateZ(-45deg);
+  transform: translateY(-1.45rem) rotateZ(-45deg);
+}
+
+input[type="checkbox"]:checked ~ label .middle {
+  width: 0;
+}
